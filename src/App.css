@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+body {
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body.dark {
+  background: rgb(41, 35, 82) !important;
+  color: rgb(255, 234, 234);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body.dark input {
+  background: rgb(66, 66, 66);
+  border-color: rgb(102, 102, 102);
+  color: rgb(255, 234, 234);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav.navbar {
+  background: rgb(240, 240, 240);
+  border: 5px solid orange;
+  padding: 10px 50px;
 }
 
-.App-link {
-  color: #61dafb;
+body.dark nav.navbar {
+  background: #464646 !important;
+  border-color: rgb(107, 73, 11);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.theme-button {
+  background: lightblue;
+  border: none;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.theme-button img{
+  transition: 1s;
+}
+
+body.dark .theme-button {
+  background: rgb(28, 8, 158);
+}
+
+body.dark .theme-button img {
+  transform: rotate(360deg);
+}
+
+
+body.dark .form button{
+  background: darkblue !important;
+  border-color: rgb(7, 7, 59) !important;
+}
+
+body.dark .todo-item button{
+  background: darkred !important;
+  border-color: rgb(66, 0, 0) !important;
 }
